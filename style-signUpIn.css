@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
+    padding: 200px 0 120px 0;
 }
 
 :root { 
@@ -123,32 +123,39 @@
 	transform: scale(.6);
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 768px){
+	
+	footer{
+		display: none;
+	}
+	.header{
+		max-height: 80px;
+	}
 	.sign__main{
 		height: 100vh;
 		width: 100vw;
 	}
 	.sign__main{
-		padding: 15% 0; 
+		padding: 18% 0; 
 		position: absolute; 
-		top:60px;  
+		top:5%;  
 		left:0;
 	}
 	.login{
-		height: 150%;
-		transform: translateY(-10%);
+		height: 130%;
+		transform: translateY(-20%);
 	}
 	#signin__label{
-		padding-top: 5%;
+		padding-top: 15%;
 	}
-	.signin__form{
-		padding-top: 0px;
-	}
+
 	.signup__form input, .signup__form button 
 	,.signin__form input, .signin__form button
 	{
 		height: 40px;
-		width: 50%;
+		width: 70%;
 	}
 	#chk:checked ~ .login{
 		transform: translateY(-65%);
@@ -161,6 +168,54 @@
 		transform: scale(.6);
 	}
 	
+}
 
+@media (max-width: 576px) {
+	footer{
+		display: none;
+	}
+	.header{
+		max-height: 80px;
+	}
+	.sign__main{
+		height: 99vh;
+		width: 100vw;
+	}
+	.sign__main{
+		padding: 18% 0; 
+		position: absolute; 
+		top:3%;  
+		left:0;
+	}
+	.login{
+		height: 150%;
+		transform: translateY(-16%);
+	}
+	#signin__label{
+		padding-top: 15%;
+	}
+	/* .signin__form{
+		
+	} */
+	.signup__form input, .signup__form button 
+	,.signin__form input, .signin__form button
+	{
+		height: 40px;
+		width: 70%;
+	}
+	#chk:checked ~ .login{
+		transform: translateY(-65%);
+	}
+	#chk:checked ~ .login label{
+		padding-top:60px;
+		transform: scale(1);	
+	}
+	#chk:checked ~ .signup label{
+		transform: scale(.6);
+	}
 
   }
+
+
+
+  
