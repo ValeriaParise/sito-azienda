@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-signUpIn.css">
+
+    
+</head>
+<body>
+    <div class="overflow-h">
+    <!-- Navbar -->
+        <header class="header">
+          <div class="header__content">
+            <a class="header__logo" href="#"> <strong>LOGO</strong> </a>
+            <ul class="header__menu">
+              <li><a href="#chisiamo" class="header__link">Chi siamo</a></li>
+              <li><a href="#team" class="header__link">Il nostro team</a></li>
+              <li><a href="#progetti" class="header__link">Progetti</a></li>
+              <li><a href="#lavoraconnoi" class="header__link">Lavora con noi</a></li>
+              <li><a href="login.html"target="_blank" rel="noreferrer noopener" class="header__link active">Accedi</a></li>
+            </ul>
+            <div class="header__quick">
+              <a class="button-small" href="#contatti">Contatti</a>
+                <div class="icon-hamburger menu-overlay">
+                  <span></span>
+                  <span></span>
+                </div>
+            </div>
+          </div>
+        </header>
+
+    <!-- Sign up -->
+        <div class="sign__container">
+            <div class="sign__main">
+                <input type="checkbox" id="chk" aria-hidden="true">
+                    <div class="signup">
+                        <form class="signup__form">
+                            <label for="chk" aria-hidden="true" id="signup__label">Sign up</label>
+                            <input type="text" name="sign__txt" placeholder="Nome" required="">
+                            <input type="email" name="signup__email" placeholder="Email" required="">
+                            <input type="number" name="signup__telefono" placeholder="Telefono" required="">
+                            <input type="password" name="signup__pswd" placeholder="Password" required="">
+                            <input type="password" name="signup__pswd" placeholder="Ripeti password" required="">
+                            <button id="signup__button">Sign up</button>
+                        </form>
+                    </div>
+                    <div class="login">
+                        <form class="signin__form">
+                            <label for="chk" aria-hidden="true" id="signin__label">Sign in</label>
+                            <input type="email" name="signin__email" placeholder="Email" required="">
+                            <input type="password" name="signin__pswd" placeholder="Password" required="">
+                            <button id="signin__button">Sign in</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+
+        <!-- Js per Menu -->
+<script> 
+    const menu__btn = document.querySelector('.icon-hamburger');
+    const allLink = document.querySelectorAll('.header__menu li a');
+  
+    menu__btn.addEventListener("click", function() {
+      document.body.classList.toggle('menu-open');
+    });
+   
+    allLink.forEach(item => {
+      item.addEventListener("click", function() {
+      document.body.classList.toggle('menu-open');
+    });
+      
+    });
+    
+    
+   </script>
+  
+    </div>    
+</body>
+</html>
