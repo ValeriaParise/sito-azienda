@@ -36,7 +36,6 @@ body{ background: var(--menu-bg);}
 .header__menu li a{  color:var(--menu-color);  opacity: 0.8;  display: block;  padding: 16px;  font-size: 15px;}
 .header__menu li a:hover {  font-weight: 600;}
   
-.active{  color:var(--highlite);  font-weight: 600;}
 
 @media (max-width: 768px) {
   .header{background-color: var(--menu-bg);}
@@ -203,11 +202,12 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 
 @media (max-width: 768px) {
   .sma-text-center{text-align: center;}
-  #img__project{display:none;}
+  /* #img__project{display:none;} */
 }
 
 /* @media(max-width:991px){
-  .sla-text-center{text-align: center;}
+  .sla-text-
+  {text-align: center;}
 } */
 
 .img-small{height: 270px;object-fit: cover;}
@@ -235,7 +235,7 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
   background-image:var(--gradient-img), url('MEDIA/architetti.jpg');
 }
 
-.mediatext{
+.mediatext, .mediaform{
   display: flex; 
   align-items: center;
   height: 1000px;
@@ -312,11 +312,15 @@ background-color: transparent;
  } 
 
  @media (max-width: 1199px){
-    .mediatext{
+
+  .header__content *{
+    font-size: 13px !important;
+  }
+    .mediaform{
       margin: auto;
       display: flex;
       flex-direction: column;
-    [class*='col-'] { width: 100%;}
+      [class*='col-'] { width: 100%;}
     }
     .modulo{
       max-width: 650px;
