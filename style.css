@@ -151,6 +151,7 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 }
 
 /* ! Helpers  */
+[class*='mt-'] 
 .mt-0{margin-top: 0 }
 .mt-1{margin-top: 10px}
 .mt-2{margin-top: 20px}
@@ -215,7 +216,7 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 
 
 /* cover */
-.cover{min-height: 100vh;display: flex;align-items: center;}
+.cover{min-height: 80vh;display: flex;align-items: center;}
 #cover__h1{color: var(--highlite);}
 
 /* Team */
@@ -321,12 +322,39 @@ background-color: transparent;
   .modulo{
     width: 90vw;
   }
+  /* .cover{
+    height: 70vh;
+  } */
+  .mediatext{
+    height: 60vh;
+    margin-bottom: 10%;
+  }
+  .mediaform{
+    padding: 10px;
+  }
+
 }
 @media (max-width: 768px) {
-  [class*='col-']{
-    padding-top: 0;
+
+  .cover{display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    min-height: 80vh ;
   }
- 
+
+  [class*='col-']{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .mediatext{
+    height: 60vh;
+  }
+  .mediaform{
+    padding: 10px;
+  }
+  
   #img__project{display:none;} 
   .spacer, .spacer2{display: none;}
   .modulo ul li{
