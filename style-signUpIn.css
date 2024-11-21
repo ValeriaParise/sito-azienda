@@ -70,7 +70,7 @@
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: bold;
 	margin-top: 30px;
 	outline: none;
@@ -123,10 +123,9 @@
 	transform: scale(.6);
 }
 
+/* medium screen */
 
-
-@media (max-width: 768px){
-	
+@media (max-width: 768px ){
 	footer{
 		display: none;
 	}
@@ -136,19 +135,17 @@
 	.sign__main{
 		height: 100vh;
 		width: 100vw;
-	}
-	.sign__main{
-		padding: 18% 0; 
+		padding: 20% 0 ; 
 		position: absolute; 
 		top:5%;  
 		left:0;
 	}
 	.login{
-		height: 130%;
-		transform: translateY(-20%);
+		height: 150%;
+		transform: translateY(-10%);
 	}
 	#signin__label{
-		padding-top: 15%;
+		padding-top: 10%;
 	}
 
 	.signup__form input, .signup__form button 
@@ -157,8 +154,11 @@
 		height: 40px;
 		width: 70%;
 	}
+	.singning__form input, .singning__form button{
+		padding-top:50%
+	}
 	#chk:checked ~ .login{
-		transform: translateY(-65%);
+		transform: translateY(-68%);
 	}
 	#chk:checked ~ .login label{
 		padding-top:60px;
@@ -170,6 +170,7 @@
 	
 }
 
+/* small screen */
 @media (max-width: 576px) {
 	footer{
 		display: none;
@@ -182,27 +183,28 @@
 		width: 100vw;
 	}
 	.sign__main{
-		padding: 18% 0; 
+		padding: 20% 0; 
 		position: absolute; 
 		top:3%;  
 		left:0;
 	}
 	.login{
-		height: 150%;
-		transform: translateY(-16%);
+		height: 155%;
+		transform: translateY(-15%);
 	}
 	#signin__label{
 		padding-top: 15%;
 	}
-	/* .signin__form{
-		
-	} */
+	.singning__form input, .singning__form button{
+	padding-top:10%
+	}
 	.signup__form input, .signup__form button 
 	,.signin__form input, .signin__form button
 	{
 		height: 40px;
 		width: 70%;
 	}
+	
 	#chk:checked ~ .login{
 		transform: translateY(-65%);
 	}
@@ -216,6 +218,63 @@
 
   }
 
+  @media (max-width: 541px){
+	.login{
+		height: 150%;
+		transform: translateY(-10%);
+	}
+	#signin__label{
+		padding-top: 8%;
+	}
+  }
 
+  /* 14 Pro max */
+  @media(max-width: 431px){
+	.login{
+		height: 160%;
+		transform: translateY(-15%);
+	}
+	#signin__label{
+		padding-top: 14%;
+	}
+	#chk:checked ~ .login{
+		transform: translateY(-63%);
+	}
+  }
 
-  
+  /*  iphone xr - 12 pro -pixel 7 - galaxy s20 Ultra*/
+  @media(max-width: 420px){
+	.signup{
+		padding-top: 8%;
+	}
+	.login{
+		height: 150%;
+		transform: translateY(-8%);
+	}
+	#signin__label{
+		padding-top: 14%;
+	}
+  }
+  /* iphone se */
+  @media(max-width: 376px){
+	.signup{
+		padding-top: 0;
+	}
+	.login{
+		height: 155%;
+		transform: translateY(-15%);
+	}
+	#signin__label{
+		padding-top: 10%;
+	}
+  }
+
+  /* galaxy s8+ */
+  @media(max-width: 361px){
+	
+	.login{
+		height: 157%;
+		
+	}
+}
+
