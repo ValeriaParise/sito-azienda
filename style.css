@@ -12,7 +12,9 @@
  }
 
 /* Reset */
-body, html{ font-family: 'Inter', sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box; margin: 0; padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{ margin: 0 0 1rem 0; padding: 0;}ol,ul{ padding-left: 20px; line-height: 1.5; }img{ height: auto;}h1{ font-size: 4rem;} h2{ font-size: 3rem;} h3{ font-size: 2rem;} h4{ font-size: 1rem;} h5{ font-size: 0.8rem;} h6{ font-size: 0.6rem;} a{ text-decoration:none}
+body, html{ font-family: 'Inter', sans-serif; line-height: 1; 
+  font-size: calc(13px + 0.3vw);
+  box-sizing: border-box; margin: 0; padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{ margin: 0 0 1rem 0; padding: 0;}ol,ul{ padding-left: 20px; line-height: 1.5; }img{ height: auto;}h1{ font-size: 4rem;} h2{ font-size: 3rem;} h3{ font-size: 2rem} h4{ font-size: 1rem;} h5{ font-size: 0.8rem;} h6{ font-size: 0.6rem;} a{ text-decoration:none}
 body{ background: var(--menu-bg);}
 
 /* Menu */
@@ -231,12 +233,12 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 #ct__3{
   background-image:var(--gradient-img), url('MEDIA/architetti.jpg');
 }
+.mediaform{display: flex; align-items: center;}
 
-.mediatext, .mediaform{
+.mediatext{
   display: flex; 
   align-items: center;
   height: 1000px;
- 
 }
 /* Banner */
 .banner{ 
@@ -262,14 +264,33 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 
 /* Mediatext*/
 @media (max-width: 575px) {
-   #img__project{display:none;} 
-   .spacer, .spacer2{display: none;}
-   
+  .modulo{
+    width: 95vw;
+  }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  #img__project{display:none;} 
   .spacer, .spacer2{display: none;}
-  
 }
+
+@media (max-width: 1199px){
+  .header__content *{
+    font-size: 13px !important;
+  }
+    .mediaform{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contatti__cont{
+      min-width: 70vw;
+      text-align: center;
+    }
+    .modulo{
+      min-width: 70vw;
+    }
+ }
+ 
 
 /*  Contatti  */
 .modulo{
@@ -320,20 +341,7 @@ background-color: transparent;
   box-sizing: border-box;
  } 
 
- @media (max-width: 1199px){
-  .header__content *{
-    font-size: 13px !important;
-  }
-    .mediaform{
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      [class*='col-'] { width: 100%;}
-    }
-    .modulo{
-      max-width: 650px;
-    }
- }
+
 
 
 /* Footer */
