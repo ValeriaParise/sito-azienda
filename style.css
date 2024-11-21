@@ -203,13 +203,6 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 .relative{position: relative;}
 .overflow-h{overflow: hidden;}
 
-@media (max-width: 768px) {
-  .sma-text-center{text-align: center;}
-  .img__project{ display: none;
-    /* display: flex; justify-content: center; */
-  }
-}
-
 .img-small{height: 270px;object-fit: cover;}
 .ionicon{width: 20px;height: 20px;margin: 10px;}
 .font-normal{font-weight: 400;}
@@ -235,12 +228,6 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
   background-image:var(--gradient-img), url('MEDIA/architetti.jpg');
 }
 .mediaform{display: flex; align-items: center;}
-
-.mediatext{
-  display: flex; 
-  align-items: center;
-  height: 100vh;
-}
 
 /* Banner */
 .banner{ 
@@ -322,63 +309,78 @@ background-color: transparent;
   .modulo{
     width: 90vw;
   }
-  /* .cover{
-    height: 70vh;
-  } */
   .mediatext{
-    height: 60vh;
+    min-height: 100%;
     margin-bottom: 10%;
+    padding-bottom: 10%;
   }
+.mediatext__bg{
+  min-height: 100%;
+}
   .mediaform{
     padding: 10px;
   }
 
 }
 @media (max-width: 768px) {
+  .sma-text-center{text-align: center;}
 
-  .cover{display:flex;
+  /* @media (max-width: 1200px) { */
+  .cover{
+    display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap:20px;
     min-height: 80vh ;
+    padding-top: 10%;
   }
 
   [class*='col-']{
     padding-top: 2%;
     padding-bottom: 2%;
   }
-
-  .mediatext{
-    height: 60vh;
-  }
   .mediaform{
     padding: 10px;
   }
-  
-  #img__project{display:none;} 
-  .spacer, .spacer2{display: none;}
+
   .modulo ul li{
     padding:10px 5px 20px 5px;
   }
+  
 }
 
 @media (max-width: 1199px){
   .header__content *{
     font-size: 13px !important;
   }
-    .mediaform{
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .contatti__cont{
-      min-width: 70vw;
-      text-align: center;
-    }
-    .modulo{
-      min-width: 70vw;
-    }
+  .col-50{width: 80%;}
+  .spacer, .spacer2{display: none;}
+  .cover{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+    /* min-height: 80vh ; */
+  }
+  .img__project{
+    padding-bottom: 15%;
+  }
+  .mediaform{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contatti__cont{
+    min-width: 70vw;
+    text-align: center;
+  }
+  .modulo{
+    min-width: 70vw;margin-top: 10%;
+  }
  }
  
 /* Footer */
