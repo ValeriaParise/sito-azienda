@@ -187,15 +187,28 @@ p{font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
 
 
 /* ! hero */
-.hero, .cover__partner{ text-align: center; padding:10px; min-height:100vh; width:100%; display:flex; flex-direction:column; justify-content:center; background-position: center center; background-size:cover; }
+.hero, .cover__partner{ text-align: center; padding:10px;  width:100%; display:flex; flex-direction:column; justify-content:center; background-position: center center; background-size:cover; }
 .cover__partner{
   min-height: 500px;
 }
-.hero *,.cover__partner * , .banner * {color:#fff}
+.hero * , .banner *, .cover__partner * {color:#fff}
 
-.hero, .cover__partner{
+ #hero__home {
+  min-height:100vh;
   background-image: var(--gradient-img), url('MEDIA/hero.jpg')
+} 
+#hero__chisiamo{
+  min-height: 60vh;
+  background-image: var(--gradient-img), url('MEDIA/architetti.jpg')
 }
+#hero__job{
+  min-height: 60vh;
+  background-image: var(--gradient-img), url('MEDIA/edilizia.jpg')
+}
+
+
+
+
 /* Helpers - Utility */
 .img-round{ border-radius: 2%;}
 .round{border-radius: 20px;}
