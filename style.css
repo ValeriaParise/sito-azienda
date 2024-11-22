@@ -335,12 +335,12 @@ p {
 }
 
 #hero__chisiamo {
-  min-height: 60vh;
+  min-height: 40vh;
   background-image: var(--gradient-img), url('MEDIA/architetti.jpg')
 }
 
 #hero__job {
-  min-height: 60vh;
+  min-height: 40vh;
   background-image: var(--gradient-img), url('MEDIA/edilizia.jpg')
 }
 
@@ -745,7 +745,13 @@ footer #hi a {
   color: var(--highlite);
 }
 
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+ }
 
 /* ************************************************************************************************************************ */
 /*                                    MEDIA                                                                                 */
