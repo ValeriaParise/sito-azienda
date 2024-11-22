@@ -1,28 +1,17 @@
-:root { 
-  --menu-bg: #e7e7e7 ;
-  --menu-color:#2C2C2C;
-  --menu-color-trasparent:#2c2c2ca9;
+:root {
+  --menu-bg: #e7e7e7;
+  --menu-color: #2C2C2C;
+  --menu-color-trasparent: #2c2c2ca9;
   --button-bg: #1d1f1f;
   --highlite: #e03838;
-  --mediatext-bg:#dcdcde;
-  --footer-primary: #F0776C ;
-  --footer-highlite:#fc9b92;
-  --gradient-img: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
- }
+  --mediatext-bg: #dcdcde;
+  --footer-primary: #F0776C;
+  --footer-highlite: #fc9b92;
+  --gradient-img: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+}
 
- /* .main-register{
-  border: 2px solid red;
- }
- .register-container{
-  border: 2px solid green;
- }
- .form-group{
-  border: 2px solid blue;
- } */
-/* header{
-  display: none  ;
-} */
- #main-login, #main-register{
+#main__login,
+#main__register {
   height: 90vh;
   width: 100vw;
   background-color: var(--menu-bg);
@@ -31,55 +20,64 @@
   justify-content: center;
 }
 
-#main-login>div, #main-register>div {
-  /* border: 2px solid green; */
+#main__login>div,
+#main__register>div {
   height: 100%;
   width: 70vw;
   display: flex;
   align-items: center;
 }
 
-#main-login>div{
+#main__login>div {
   justify-content: center;
 }
 
-#main-register>div{
-  margin-top: 1% ;
+#main__register>div {
+  margin-top: 1%;
   justify-content: center;
 }
 
-
-.login-container, .register-container {
+.login__container,
+.register__container {
   width: 390px;
   background: white;
   border-radius: 2.5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.247);
 }
 
-.login-container {margin-top: 50px;  padding: 40px;}
+.login__container {
+  margin-top: 50px;
+  padding: 40px;
+}
 
-.register-container {margin-top: 100px; margin-bottom: auto; padding:40px 40px 20px 40px; 
-  }
-.login-container h2, .register-container h2  {
+.register__container {
+  margin-top: 100px;
+  margin-bottom: auto;
+  padding: 40px 40px 20px 40px;
+}
+
+.login__container h2,
+.register__container h2 {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.form-group {
+.form__group {
   margin-bottom: 30px;
   position: relative;
 }
-.form-group div{
+
+.form__group div {
   margin-bottom: 10px;
 }
 
 
-.form-group label {
+.form__group label {
   display: block;
   margin-bottom: 5px;
 }
 
-.form-group input {
+.form__group input {
   width: calc(100% - 30px);
   padding: 15px 22px;
   margin-bottom: 10px;
@@ -87,67 +85,19 @@
   outline: none;
 }
 
-.form-group input:focus {
+.form__group input:focus {
   color: var(--menu-bg);
   border-bottom-color: var(--button-bg);
 }
 
-.form-group .input-icon {
+.form__group .input__icon {
   position: absolute;
   top: 52px;
   color: #aaa;
   z-index: 100;
 }
-@media screen and (max-width: 1025px){
-  .login-container{
-      margin: auto;
-  }
-  /* .register-container{
-      margin: auto;
-  } */
-}
 
-
-@media(max-width:576px){
-  footer{display: none;}
-
-  #main-login, #main-register{
-  background-color: white;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-#main-login>div, #main-register>div{
-  width: 100%;
-  height: 100%;
-}
-.login-container, .register-container {
-  margin-top: 20px;
-  width: 100%;
-  padding: 0 10%;
-  background: none;
-  border-radius: none;
-  box-shadow: none;
-}
-.login-container, .register-container{
-  margin: 10% 0 0 0;
-}
-.login-container h2, .register-container h2{
-  margin-bottom: 40px;
-}
-.form-group, .form-group label{
-  margin-bottom: 30px;
-}
-}
-
-
-@media screen and (max-width: 376px){
-  .login-container, .register-container{
-      margin: 70px 0 0 0!important;
-  }
-}
-
-
-.btn-login-register{
+.btn-login-register {
   width: 100%;
   margin: 20px 0;
   padding: 15px;
@@ -156,51 +106,39 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  
+
 }
 
-.btn-login-register:hover{
+.btn-login-register:hover {
   background-color: var(--highlite);
 }
 
-.signin, .login-link {
-  margin-top:60px;
+.signin,
+.login-link {
+  margin-top: 60px;
   text-align: center;
   margin-bottom: 10px;
 }
-.signup, .login-link {
-  margin-top:15px;
+
+.signup,
+.login-link {
+  margin-top: 15px;
   text-align: center;
   margin-bottom: px;
 }
 
- .signin a,  .signup a, .login-link a {
+.signin a,
+.signup a,
+.login-link a {
   color: var(--highlite);
   text-decoration: none;
 }
 
-.signup a:hover, .login-link a:hover{
+.signup a:hover,
+.login-link a:hover {
   text-decoration: underline;
   color: var(--button-bg);
 }
-
-@media screen and (max-width:576px){
-  .btn-login-register{
-      margin: 20px 0;
-  }
-  .signin p , .signup p, .login-link p{
-      margin: 0;
-  }
-  .signin .signup, .login-link{
-      background-color: white;
-      border-radius: 25px;
-      padding: 5px;
-  }
-}
-
-
-
-
 
 .wrap-input100 {
   width: 100%;
@@ -219,7 +157,6 @@
   padding: 0 5px;
 }
 
-/*---------------------------------------------*/ 
 .focus-input100 {
   position: absolute;
   display: block;
@@ -254,22 +191,21 @@
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100::after {
+.input100:focus+.focus-input100::after {
   top: -15px;
 }
 
-.input100:focus + .focus-input100::before {
+.input100:focus+.focus-input100::before {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input100::after {
+.has-val.input100+.focus-input100::after {
   top: -15px;
 }
 
-.has-val.input100 + .focus-input100::before {
+.has-val.input100+.focus-input100::before {
   width: 100%;
 }
-
 
 .btn-show-pass {
   font-size: 15px;
@@ -291,5 +227,83 @@
 
 .btn-show-pass.active {
   color: var(--highlite);
+}
+
+
+
+
+/* MEDIA QUERY */
+
+
+@media (max-width: 1025px) {
+  .login__container {
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width:576px) {
+  footer {
+    display: none;
+  }
+
+  #main__login,
+  #main__register {
+    background-color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  #main__login>div,
+  #main__register>div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .login__container,
+  .register__container {
+    margin: 10% 0 0 0;
+    width: 100%;
+    padding: 0 10%;
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+
+  }
+
+  .login__container h2,
+  .register__container h2 {
+    margin-bottom: 40px;
+  }
+
+  .form__group,
+  .form__group label {
+    margin-bottom: 30px;
+  }
+
+  .btn-login-register {
+    margin: 20px 0;
+  }
+
+  .signin p,
+  .signup p,
+  .login-link p {
+    margin: 0;
+  }
+
+  .signin .signup,
+  .login-link {
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+  }
+}
+
+
+@media screen and (max-width: 376px) {
+  .login__container,
+  .register__container {
+    margin: 70px 0 0 0 !important;
+  }
 }
 
