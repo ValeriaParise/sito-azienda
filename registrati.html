@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style-signUpIn.css"> -->
-     <!-- <link rel="stylesheet" href="login-style.css"> -->
 
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    @media screen and (max-width:576px) {
+      footer {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="overflow-h">
+  <div class="overflow-h">
     <!-- Navbar -->
     <header class="header">
       <div class="header__content">
-        <a class="header__logo" href="index.html"><img src="MEDIA/company-slogan-removebg-preview.png" width="80px" alt=""> </a>
+        <a class="header__logo" href="index.html"><img src="MEDIA/company-slogan-removebg-preview.png" width="80px" alt="">
+        </a>
         <ul class="header__menu">
           <li><a href="index.html" class="header__link">Home</a></li>
           <li><a href="chisiamo.html" class="header__link">Chi siamo</a></li>
           <li><a href="lavoraconnoi.html" class="header__link">Lavora con noi</a></li>
-          <li><a href="index.html#contatti"target="_blank" rel="noreferrer noopener" class="header__link">Contatti</a></li>
+          <li><a href="index.html#contatti" target="_blank" rel="noreferrer noopener" class="header__link">Contatti</a>
+          </li>
         </ul>
         <div class="header__quick">
           <a class="button-small" href="login.html">Accedi</a>
-          <!-- <a class="button-small" href="signUpIn.html"target="_blank" rel="noreferrer noopener">Accedi</a> -->
-            <div class="icon-hamburger menu-overlay">
-              <span></span>
-              <span></span>
-            </div>
+          <div class="icon-hamburger menu-overlay">
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
-<!-- Login -->
+    <!-- Login -->
     <main id="main__register">
       <div>
-          <div class="register__container">
-              <h2>Registrati</h2>
-              <div class="form__group">
-                <div class="wrap-input100 validate-input" >
-                  <input class="input100" type="text" name="nome">
-                  <span class="focus-input100" data-placeholder="Nome"></span>
-                </div>
-              </div>
-              <div class="form__group">
-                <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-                  <input class="input100" type="text" name="email">
-                  <span class="focus-input100" data-placeholder="Email"></span>
-                </div>
-              </div>
-              <div class="form__group">
-                  <div class="wrap-input100 validate-input" data-validate="Enter password">
-                    <span class="btn-show-pass">
-                      <i class="fa-solid fa-eye"></i>
-                    </span>
-                    <input class="input100" type="password" name="pass">
-                    <span class="focus-input100" data-placeholder="Password"></span>
-                  </div>
-              </div>
-              <div class="form__group">
-                <div class="wrap-input100 validate-input" data-validate="Enter password">
-                  <span class="btn-show-pass">
-                    <i class="fa-solid fa-eye"></i>
-                  </span>
-                  <input class="input100" type="password" name="pass">
-                  <span class="focus-input100" data-placeholder="Conferma password"></span>
-                </div>
+        <div class="register__container">
+          <h2>Registrati</h2>
+          <div class="form__group">
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="nome">
+              <span class="focus-input100" data-placeholder="Nome"></span>
             </div>
-              <button class="btn-login-register ">Registrati</button>
-              <div class="signup">
-                  <p>Hai già un account? <a href="login.html">Accedi</a>
-                  </p>
-              </div>
           </div>
+          <div class="form__group">
+            <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+              <input class="input100" type="text" name="email">
+              <span class="focus-input100" data-placeholder="Email"></span>
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="wrap-input100 validate-input" data-validate="Enter password">
+              <span class="btn-show-pass">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+              <input class="input100" type="password" name="pass">
+              <span class="focus-input100" data-placeholder="Password"></span>
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="wrap-input100 validate-input" data-validate="Enter password">
+              <span class="btn-show-pass">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+              <input class="input100" type="password" name="pass">
+              <span class="focus-input100" data-placeholder="Conferma password"></span>
+            </div>
+          </div>
+          <button class="btn-login-register ">Registrati</button>
+          <div class="signup">
+            <p>Hai già un account? <a href="login.html">Accedi</a>
+            </p>
+          </div>
+        </div>
       </div>
-  </main>
+    </main>
 
-<!-- Footoer -->
+    <!-- Footoer -->
     <footer>
-          <span class="mt-2">Company | C.F. ABC000000000 | P.Iva 000000000 </span>
-          <br>
-          <span> <i class="fa-solid fa-location-dot"></i> &nbsp Via lorem, 123 - 12345 Città (Provincia) PAESE </span> 
-          <br>
-          <br>
-          <a href="#"> nomeazienda@dominio.it</a> <!-- href="mailto:indirizzo@email.com" -->
-          <br> 
-          <span itemprop="telephone"><a href="#">+39 123 45 67 890</a></span>
-          <div class="spacer2"></div>
-          <a target="_blank" href="#"> privacy</a> | <a target="_blank" href="#"> cookie policy</a>
-          <div class="social__cont">        
-          <ul class="social__list">
-            <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-          </ul>
-          <div class="floatstop"></div>
-          </div><!--/fine social cont-->
-         <div class="credits">
-         <a target="_blank" href="#"><img width="150px" src="MEDIA/company-icon-removebg-full.png" title="" alt=""></a>  
-          </div>
-          <br>
-          <span id="hi">Designed by <a target="_blank" href="https://www.linkedin.com/in/valeria-parise-7a90/">Valeria Parise</a></span>
+      <span class="mt-2">Company | C.F. ABC000000000 | P.Iva 000000000 </span>
+      <br>
+      <span> <i class="fa-solid fa-location-dot"></i> &nbsp Via lorem, 123 - 12345 Città (Provincia) PAESE </span>
+      <br>
+      <br>
+      <a href="#"> nomeazienda@dominio.it</a> <!-- href="mailto:indirizzo@email.com" -->
+      <br>
+      <span itemprop="telephone"><a href="#">+39 123 45 67 890</a></span>
+      <div class="spacer2"></div>
+      <a target="_blank" href="#"> privacy</a> | <a target="_blank" href="#"> cookie policy</a>
+      <div class="social__cont">
+        <ul class="social__list">
+          <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+        </ul>
+        <div class="floatstop"></div>
+      </div><!--/fine social cont-->
+      <div class="credits">
+        <a target="_blank" href="#"><img width="150px" src="MEDIA/company-icon-removebg-full.png" title="" alt=""></a>
+      </div>
+      <br>
+      <span id="hi">Designed by <a target="_blank" href="https://www.linkedin.com/in/valeria-parise-7a90/">Valeria
+          Parise</a></span>
     </footer>
-        
 
-        <!-- Js per Menu -->
-    <script> 
-    const menu__btn = document.querySelector('.icon-hamburger');
-    const allLink = document.querySelectorAll('.header__menu li a');
-  
-    menu__btn.addEventListener("click", function() {
-      document.body.classList.toggle('menu-open');
-    });
-   
-    allLink.forEach(item => {
-      item.addEventListener("click", function() {
-      document.body.classList.toggle('menu-open');
-    });
-      
-    });
-    
-    
-   </script>
-  
-    </div>    
+
+    <!-- Js per Menu -->
+    <script>
+      const menu__btn = document.querySelector('.icon-hamburger');
+      const allLink = document.querySelectorAll('.header__menu li a');
+
+      menu__btn.addEventListener("click", function () {
+        document.body.classList.toggle('menu-open');
+      });
+
+      allLink.forEach(item => {
+        item.addEventListener("click", function () {
+          document.body.classList.toggle('menu-open');
+        });
+
+      });
+
+
+    </script>
+
+  </div>
 </body>
+
 </html>

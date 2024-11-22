@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,174 +8,183 @@
   <title>Home page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<div class="overflow-h">
-  <!-- Navbar -->
-  <header class="header">
-    <div class="header__content">
-      <a class="header__logo" href="#"><img src="MEDIA/company-slogan-removebg-preview.png" width="80px" alt=""> </a>
-      <ul class="header__menu">
-        <li><a href="#" class="header__link active">Home</a></li>
-        <li><a href="chisiamo.html" class="header__link">Chi siamo</a></li>
-        <li><a href="lavoraconnoi.html" class="header__link">Lavora con noi</a></li>
-        <li><a href="index.html#contatti"rel="noreferrer noopener" class="header__link">Contatti</a></li>
-      </ul>
-      <div class="header__quick">
-        <a class="button-small" href="login.html">Accedi</a>
-         <!-- LOGIN CHE SPACCA -->
-        <!-- <a href="signUpIn.html"target="_blank" rel="noreferrer noopener" class="header__link">Accedi</a> -->
+  <div class="overflow-h">
+    <!-- Navbar -->
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="#"><img src="MEDIA/company-slogan-removebg-preview.png" width="80px" alt=""> </a>
+        <ul class="header__menu">
+          <li><a href="#" class="header__link active">Home</a></li>
+          <li><a href="chisiamo.html" class="header__link">Chi siamo</a></li>
+          <li><a href="lavoraconnoi.html" class="header__link">Lavora con noi</a></li>
+          <li><a href="index.html#contatti" rel="noreferrer noopener" class="header__link">Contatti</a></li>
+        </ul>
+        <div class="header__quick">
+          <a class="button-small" href="login.html">Accedi</a>
+
           <div class="icon-hamburger menu-overlay">
             <span></span>
             <span></span>
           </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Hero -->
+    <div class="hero hero__background" id="hero__home">
+      <div class="hero__content">
+        <h1> Titolo titolo titolo </h1>
+        <h2 class="font-normal"> sottotitolo </h2>
+        <a href="" class="button button__white mt-2">Call to action</a>
       </div>
     </div>
-  </header>
-
-
-<!-- Hero -->
-  <div class="hero hero__background" id="hero__home" >
-    <div class="hero__content">
-      <h1> Titolo titolo titolo </h1>
-      <h2 class="font-normal"> sottotitolo </h2>
-      <a href="" class="button button__white mt-2">Call to action</a>
+    <!-- Cover -->
+    <div class="grid cover pt-4 pb-2" id="chisiamo">
+      <div class="col-50  sma-text-center">
+        <h1 id="cover__h1">Azienda</h1>
+        <h2 class="font-normal"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime, quod ratione, sed magnam
+          necessitatibus cupiditate consequatur esse cum, labore dicta minus maiores quas veniam tenetur fugiat. Quos,
+          corporis. Voluptas?</p>
+        <a href="" class="button button__black">Call to action</a>
+      </div>
+      <div class="col-50 p-3 relative">
+        <img src="MEDIA/cover.jpg" class="img-res img-round" alt="">
+      </div>
     </div>
-  </div>
-<!-- Cover -->
-  <div class="grid cover pt-4 pb-2" id="chisiamo">
-    <div class="col-50  sma-text-center">
-      <h1 id="cover__h1">Azienda</h1>
-      <h2 class="font-normal"></h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime, quod ratione, sed magnam necessitatibus cupiditate consequatur esse cum, labore dicta minus maiores quas veniam tenetur fugiat. Quos, corporis. Voluptas?</p>
-      <a href="" class="button button__black">Call to action</a>
+
+    <!-- Project -->
+    <div class="grid cover pt- pb-2 " id="progetti">
+      <div class="col-50 p-3 relative img__project">
+        <img src="MEDIA/progetti.jpg" class="img-res img-round " id="img__project1" alt="">
+      </div>
+      <div class="col-50 sma-text-center ">
+        <h2 class="text-1">Titolo mediatext1</h2>
+        <h3>Sottotitolo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum laudantium magni inventore optio
+          modi praesentium, provident omnis nostrum dolore sequi, tempore atque voluptatem repudiandae quidem doloribus
+          tenetur. A, aspernatur.
+          Obcaecati, maxime dolor porro delectus exercitationem aspernatur officiis, voluptate nostrum temporibus quae
+          sit quaerat hic quam ducimus atque, velit saepe molestiae neque! Magni, odit. In similique commodi praesentium
+          accusamus reprehenderit!
+        </p>
+        <a href="" class="button button__black">Scopri di più</a>
+      </div>
     </div>
-    <div class="col-50 p-3 relative">
-      <img src="MEDIA/cover.jpg" class="img-res img-round" alt="">
+    <div class="grid cover pt-2 pb-2" id="chisiamo">
+      <div class="col-50  sma-text-center">
+        <h2 class="text-1">Titolo mediatext</h2>
+        <h2 class="font-normal"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime, quod ratione, sed magnam
+          necessitatibus cupiditate consequatur esse cum, labore dicta minus maiores quas veniam tenetur fugiat. Quos,
+          corporis. Voluptas?</p>
+        <a href="" class="button button__black">Call to action</a>
+      </div>
+      <div class="col-50 p-3 relative">
+        <img src="MEDIA/cover.jpg" class="img-res img-round" alt="">
+      </div>
     </div>
-  </div>
-
-  <!-- Project -->
-  <div class="grid cover pt- pb-2 " id="progetti">
-    <div class="col-50 p-3 relative img__project">
-      <img src="MEDIA/progetti.jpg" class="img-res img-round " id="img__project" alt="">
+    <!-- Banner -->
+    <div class="banner pt-2 pb-2 banner__background">
+      <div class="banner__content">
+        <h1> Titolo banner </h1>
+        <h2 class="font-normal"> sottotitolo banner </h2>
+        <a href="" class="button button__white mt-2">Call to action banner</a>
+      </div>
     </div>
-    <div class="col-50 sma-text-center ">
-      <h2 class="text-1">Titolo mediatext</h2>
-      <h3>Sottotitolo</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum laudantium magni inventore optio modi praesentium, provident omnis nostrum dolore sequi, tempore atque voluptatem repudiandae quidem doloribus tenetur. A, aspernatur.
-      Obcaecati, maxime dolor porro delectus exercitationem aspernatur officiis, voluptate nostrum temporibus quae sit quaerat hic quam ducimus atque, velit saepe molestiae neque! Magni, odit. In similique commodi praesentium accusamus reprehenderit!
-      </p>
-      <a href="" class="button button__black">Scopri di più</a>
+    <div class="spacer"></div>
+    <!-- Contact -->
+    <div class="grid mediaform pt-4 mt-3" id="contatti">
+      <div class="col-50 p-3 sma-text-center contatti__cont">
+        <h2 class="text-1">Contatti</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure totam iusto quis numquam voluptatibus sed
+          saepe animi eaque at possimus! Soluta velit vel cupiditate sint sed voluptas rerum ea ab!
+        </p>
+      </div>
+      <!-- Form -->
+      <div class="col-50 p-3 relative modulo mb-4">
+        <form action="" method="post">
+          <ul>
+            <li class="f__input">
+              <label for=nome>Nome</label>
+              <input type="text" name="nome" class="input__text" required autofocus>
+            </li>
+            <li class="f__input">
+              <label for="email">Email</label>
+              <input type="text" name="email" class="input__text" required>
+            </li>
+            <li class="f__input">
+              <label for="testo">Messaggio</label>
+              <textarea name="testo" class="input__text" id="f__testo"></textarea>
+            </li>
+            <li class="f__btn mt-2 mb-2 ">
+              <input type="submit" value="Richiedi informazioni" class="btn__info button-small">
+            </li>
+          </ul>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="grid cover pt-2 pb-2" id="chisiamo">
-    <div class="col-50  sma-text-center">
-      <h2 class="text-1">Titolo mediatext</h2>
-      <h2 class="font-normal"></h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime, quod ratione, sed magnam necessitatibus cupiditate consequatur esse cum, labore dicta minus maiores quas veniam tenetur fugiat. Quos, corporis. Voluptas?</p>
-      <a href="" class="button button__black">Call to action</a>
-    </div>
-    <div class="col-50 p-3 relative">
-      <img src="MEDIA/cover.jpg" class="img-res img-round" alt="">
-    </div>
-  </div>
-  <!-- Banner -->
-  <div class="banner pt-2 pb-2 banner__background" >
-    <div class="banner__content">
-      <h1> Titolo banner </h1>
-      <h2 class="font-normal"> sottotitolo banner </h2>
-      <a href="" class="button button__white mt-2">Call to action banner</a>
-    </div>
-  </div>
-<div class="spacer"></div>
- <!-- Contact -->
- <div class="grid mediaform pt-4 mt-3" id="contatti">
-  <div class="col-50 p-3 sma-text-center contatti__cont">
-    <h2 class="text-1">Contatti</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure totam iusto quis numquam voluptatibus sed saepe animi eaque at possimus! Soluta velit vel cupiditate sint sed voluptas rerum ea ab!     
-    </p>
-  </div>
-  <!-- Form -->
-  <div class="col-50 p-3 relative modulo mb-4">
-    <form action="" method="post">
-      <ul>
-        <li class="f__input">
-          <label for=nome>Nome</label>
-          <input type="text" name="nome" class="input__text" required
-          autofocus>
-        </li>
-        <li class="f__input">
-          <label for="email">Email</label>
-          <input type="text" name="email" class="input__text"  required>
-        </li>
-        <li class="f__input">
-          <label for="testo">Messaggio</label>
-          <textarea name="testo" class="input__text" id="f__testo"></textarea>
-        </li>
-        <li class="f__btn mt-2 mb-2 ">
-          <input type="submit" value="Richiedi informazioni" class="btn__info button-small">
-        </li>
-      </ul>
-    </form>
-  </div>
-</div>
- <!-- FOOTER -->
- <footer>
-  <span class="mt-2">Company | C.F. ABC000000000 | P.Iva 000000000 </span>
-  <br>
-  <span> <i class="fa-solid fa-location-dot"></i> &nbsp Via lorem, 123 - 12345 Città (Provincia) PAESE </span> 
-  <br>
-  <br>
-  <a href="#"> nomeazienda@dominio.it</a> <!-- href="mailto:indirizzo@email.com" -->
-  <br> 
-  <span itemprop="telephone"><a href="#">+39 123 45 67 890</a></span>
-  <div class="spacer2"></div>
-  <a target="_blank" href="#"> privacy</a> | <a target="_blank" href="#"> cookie policy</a>
-  <div class="social__cont">        
-  <ul class="social__list">
-    <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-    <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-    <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-    <li><a target="_blank" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-  </ul>
-  <div class="floatstop"></div>
-  </div><!--/fine social cont-->
- <div class="credits">
- <a target="_blank" href="#"><img width="150px" src="MEDIA/company-icon-removebg-full.png" title="" alt=""></a>  
-  </div>
-  <br>
-  <span id="hi">Designed by <a target="_blank" href="https://www.linkedin.com/in/valeria-parise-7a90/">Valeria Parise</a></span>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+      <span class="mt-2">Company | C.F. ABC000000000 | P.Iva 000000000 </span>
+      <br>
+      <span> <i class="fa-solid fa-location-dot"></i> &nbsp Via lorem, 123 - 12345 Città (Provincia) PAESE </span>
+      <br>
+      <br>
+      <a href="#"> nomeazienda@dominio.it</a> <!-- href="mailto:indirizzo@email.com" -->
+      <br>
+      <span itemprop="telephone"><a href="#">+39 123 45 67 890</a></span>
+      <div class="spacer2"></div>
+      <a target="_blank" href="#"> privacy</a> | <a target="_blank" href="#"> cookie policy</a>
+      <div class="social__cont">
+        <ul class="social__list">
+          <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+        </ul>
+        <div class="floatstop"></div>
+      </div><!--/fine social cont-->
+      <div class="credits">
+        <a target="_blank" href="#"><img width="150px" src="MEDIA/company-icon-removebg-full.png" title="" alt=""></a>
+      </div>
+      <br>
+      <span id="hi">Designed by <a target="_blank" href="https://www.linkedin.com/in/valeria-parise-7a90/">Valeria
+          Parise</a></span>
+    </footer>
 
 
 
 
 
 
-<!-- Js per Menu -->
-<script> 
-  const menu__btn = document.querySelector('.icon-hamburger');
-  const allLink = document.querySelectorAll('.header__menu li a');
+    <!-- Js per Menu -->
+    <script>
+      const menu__btn = document.querySelector('.icon-hamburger');
+      const allLink = document.querySelectorAll('.header__menu li a');
 
-  menu__btn.addEventListener("click", function() {
-    document.body.classList.toggle('menu-open');
-  });
- 
-  allLink.forEach(item => {
-    item.addEventListener("click", function() {
-    document.body.classList.toggle('menu-open');
-  });
-    
-  });
-  
-  
- </script>
+      menu__btn.addEventListener("click", function () {
+        document.body.classList.toggle('menu-open');
+      });
+
+      allLink.forEach(item => {
+        item.addEventListener("click", function () {
+          document.body.classList.toggle('menu-open');
+        });
+
+      });
+
+
+    </script>
 
 
 </body>
-</html>
 
+</html>
